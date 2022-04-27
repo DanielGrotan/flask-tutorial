@@ -16,7 +16,6 @@ def get_db():
 
 
 def close_db(e=None):
-    print(e)
     db = flask.g.pop("db", None)
 
     if db is not None:
